@@ -2,7 +2,7 @@
 
 # Google Colab Link: <a href="https://colab.research.google.com/drive/1DpKGtxicC9IIrR9GR7sy3HxLThfevpJ4#scrollTo=iokgOW_-RTh8">CLICK HERE</a>!
 
-# Laboratory Work 3 – Guide Questions Answers
+# Laboratory Work 3 – Guide Questions (Student Reflection & Explanation)
 
 # 1. Dataset Preparation
 
@@ -58,40 +58,40 @@ Ans: The trained model can be integrated into a mobile or web application using 
 
 # Visualization & Overfitting
 
-# ○ What signs indicated overfitting in your first model?
+# 1. What signs indicated overfitting in your first model?
 
 Ans: Overfitting was observed when the training accuracy continued to increase while the validation accuracy stopped improving or started decreasing. Additionally, the validation loss increased while the training loss decreased. This indicated that the model was memorizing the training data instead of learning general patterns.
 
-# ○ How did data augmentation affect validation accuracy?
+# 2. How did data augmentation affect validation accuracy?
 
 Ans: Data augmentation helped improve validation accuracy because it introduced more variation in the training images. By randomly flipping, rotating, and zooming images, the model learned to recognize objects under different conditions. This improved the model’s ability to classify unseen images.
 
 # Model Improvement
 
-# ○ What is the purpose of dropout layers?
+# 3. What is the purpose of dropout layers?
 
 Ans: Dropout layers help reduce overfitting by randomly disabling a percentage of neurons during training. This prevents the model from relying too heavily on specific neurons and forces it to learn more generalized features.
 
-# ○ Why does data augmentation improve generalization?
+# 4. Why does data augmentation improve generalization?
 
 Ans: Data augmentation improves generalization because it exposes the model to different versions of the same image. This helps the model learn patterns that are independent of orientation, scale, or position, making it more capable of handling new images.
 
 # Performance Comparison
 
-# ○ Compare accuracy before and after improvements.
+# 5. Compare accuracy before and after improvements.
 
 Ans: Before applying improvements such as data augmentation and dropout, the model showed a noticeable gap between training and validation accuracy. After implementing these techniques, the validation accuracy improved and became closer to the training accuracy, indicating better generalization and reduced overfitting.
 
-# ○ Which technique contributed most to improvement?
+# 6. Which technique contributed most to improvement?
 
 Ans: Among the applied techniques, data augmentation contributed the most improvement because it effectively increased the diversity of the dataset. This allowed the model to learn from more varied examples, which significantly improved validation accuracy.
 
 # Deployment & Application
 
-# ○ Why is saving the model important?
+# 7. Why is saving the model important?
 
 Ans: Saving the model is important because it allows the trained model to be reused without retraining. This saves time and computational resources and makes it easier to deploy the model in real-world applications.
 
-# ○ How can this model be deployed in a real-world system?
+# 8. How can this model be deployed in a real-world system?
 
 Ans: The model can be deployed by integrating it into a server or application that processes images uploaded by users. For example, a web application could allow users to upload a plant image, and the server would run the trained model to predict the plant species and return the result. The model could also be converted to TensorFlow Lite for use in mobile applications.
